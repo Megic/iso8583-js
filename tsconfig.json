@@ -2,31 +2,22 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"outDir": "lib",
-		"newLine": "lf",
-		"sourceMap": false,
-		"target": "es2015",
-		"useDefineForClassFields": false,
-		"allowSyntheticDefaultImports": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"allowJs": false,
-		"strict": true,
-		"noUnusedLocals": true,
-		"experimentalDecorators": true,
-		"resolveJsonModule": true,
-		"esModuleInterop": true,
-		"removeComments": false,
-		"lib": ["esnext", "dom"],
-		"types": ["jest", "node"],
-		"rootDir": ".",
-		"skipLibCheck": true,
-		"declarationDir": "lib/types",
-		"declaration": true
+		"target": "es2017",
+        "module": "commonjs",
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "noImplicitAny": true,
+        // "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
 	},
 	"include": [
 		"./core/*"
 	],
-	"exclude": [
-		"./__test__/*"
-	]
+	"exclude": ["node_modules"]
 }

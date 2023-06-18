@@ -1,7 +1,7 @@
 {
-  "name": "iso8583-es",
-  "version": "1.0.2",
-  "author": "ysutommy",
+  "name": "iso8583-node",
+  "version": "1.0.1",
+  "author": "megic",
   "description": "A ISO8583 protocol sdk with ES6 and TypeScript",
   "keywords": [
     "typescript",
@@ -9,14 +9,14 @@
     "银联8583",
     "8583"
   ],
-  "type": "module",
   "main": "lib/core/index.js",
   "types": "lib/types/core",
   "files": [
     "lib"
   ],
   "scripts": {
-    "test": "node --loader ts-node/esm __test__/core.test.js"
+    "test": "node  ./__test__/core.test.js",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
