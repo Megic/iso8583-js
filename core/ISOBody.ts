@@ -77,7 +77,7 @@ export default class ISOBody {
 				try {
 					ds[i] = items[i + 1].decode(iis);
 				} catch (e: any) {
-					throw new Error(e?.message + " in read[" + (i + 1) + "]");
+					//throw new Error(e?.message + " in read[" + (i + 1) + "]");
 				}
 			}
 		}

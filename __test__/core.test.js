@@ -25,4 +25,5 @@ const ds = HEX.hex2Bytes("0200202004C020C098113100000001540210000637622759432518
 const iis = new ISOInputStream(ds);
 const resp = new ISOBody(fields);
 resp.decode(iis); // 解码
+console.log(resp.getField(35));
 console.log(resp.toString());
